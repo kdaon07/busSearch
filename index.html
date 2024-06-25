@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="./style.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
+    <script type="text/javascript" src="script2.js" defer></script>
+    <title>메인 페이지</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2 class="title">정류장 검색</h2>
+            <div class="mb-3">
+                <label for="name" class="form-label">페이지</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="cityname" class="form-label">표시 갯수</label>
+                <input type="text" class="form-control" id="cityname">
+            </div>
+            <button type="button" class="btn btn-primary" id="search" title="검색">검색하기</button>
+            <p class="blind">
+                누르면 다른 페이지로 넘어감
+            </p>    
+            <button type="reset" class="btn btn-danger" title="초기화">초기화</button>
+        </form>
+    </div>
+
+    <div class="list" id="list">
+
+    </div>
+</body>
+
+</html>
